@@ -5,13 +5,13 @@ Verkefnið felst í því að smíða prótótýpu af fyrirlestravef fyrir veffo
 Til að byrja með þarf að ná í verkefnið.
 
 
-Ef búið er að ná í verkefnið þarf að keyra skipunina þarf ekki að sækja neina pakka nema `rollup`, `babel` og bæta þeim við tól sem eru nú þegar sett upp í verkefni. Rollup er sótt með skipunini `rollup main.js --file bundle.js --format cjs` og er það notað til að pakka saman öllum Javascript kóðanum í eina heild. 
+Ef búið er að ná í verkefnið þarf eingöngu að sækja neina pakkana `rollup`, `babel` og bæta þeim við tól sem eru nú þegar sett upp í verkefninu. Rollup er sótt með skipunini `rollup main.js --file bundle.js --format cjs` og er það notað til að pakka saman öllum Javascript kóðanum í eina heild. 
 
 Einnig þarf að sækja babel það er sótt með skipunini `npm install babel-cli babel-core --save-dev` sem bætir babel beint í `package.json`. `Babel` er notað til þess að transpila kóðann. 
 
 Eftir þetta er allt sett upp þarf að keyra browser-sync sem er uppsett nú þegar með skipunini `npm run dev`.
 
-Þá opnast verkefnið í vafra þá ættu allar síður að birtast og virkni vera hundrað prósent.
+Þegar browser-sync er keyrt opnast verkefnið í vafra á forsíðu og ættu allir fyrirlestrar að vera aðgengilegir.
 
 # Uppsetning og skipulag verkefnis
 
