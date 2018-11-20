@@ -3,7 +3,7 @@
 .page {
     display: flex;
     justify-content: center;
-    padding: $gutter;
+    padding: 0 $gutter;
   
     &__content {
       display: flex;
@@ -15,18 +15,16 @@
     &__top {
       display: flex;
       justify-content: center;
+      margin-bottom: $gutter;
+      margin-top: $gutter;
     }
 
     &__buttons {
       display: flex;
-      justify-items: space-around;
+      width: 25%;
+      justify-content: space-around;
       flex-direction: row;
 
-
-    }
-
-    &__button {
-      display: flex;
     }
 
     &__cards {
@@ -52,4 +50,24 @@
       }
     }
     }
+
+
+.buttons {
+  display: flex;
+  padding: 0 $gutter;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    font-family: $font-head;
+    font-weight: bold;
+    background-color: $color-4;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    &.button-active {
+      background-color: $color-5;
+    }
   }
+}
