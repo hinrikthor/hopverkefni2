@@ -2,9 +2,40 @@
 
 .page {
     display: flex;
+    justify-content: center;
+    padding: $gutter;
   
     &__content {
       display: flex;
+      max-width: $max-width;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__top {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-items: space-around;
       flex-direction: row;
+
+
+    }
+
+    &__button {
+      display: flex;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__card {
+      display: flex;
+
     }
 }
