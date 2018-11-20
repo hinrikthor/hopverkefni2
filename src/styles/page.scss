@@ -32,10 +32,24 @@
     &__cards {
       display: flex;
       flex-direction: row;
+      max-width: 1220px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0 auto;
     }
 
     &__card {
       display: flex;
-
+      flex-direction:column;
+      width: 100%;
+  
+      @media (min-width: 800px) {
+        width: 50%;
+      }
+  
+      @media (min-width: 1200px) {
+        width: 33.3333%;
+      }
     }
-}
+    }
+  }
