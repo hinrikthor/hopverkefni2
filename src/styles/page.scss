@@ -1,0 +1,10 @@
+@import "config";
+
+.page {
+    display: flex;
+  
+    &__content {
+      display: flex;
+      flex-direction: row;
+    }
+}
