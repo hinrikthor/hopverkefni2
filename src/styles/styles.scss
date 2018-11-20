@@ -24,4 +24,13 @@ img { /* stylelint-disable-line */
   max-width: 100%;
 }
 
+.page {
+  display: flex;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 // TODO import
