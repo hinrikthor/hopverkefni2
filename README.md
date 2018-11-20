@@ -32,7 +32,7 @@ Hinrik Þór Veturliðason htv2@hi.is - Tölvunarfræðinemi
 
 Ástráður Stefánsson ass106@hi.is - Tölvunarfræðinemi
 
-Óakveðið Hinriksson lel2@hi.is - Tölvunarfræðinemi
+Teitur Guðmundsson tg123@hi.is - Tölvunarfræðinemi
 
 # Hópverkefni 2
 
