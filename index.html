@@ -5,6 +5,166 @@
   <title>Hópverkefni 2</title>
 </head>
 <body>
+<<<<<<< Updated upstream
 
+=======
+  <header>
+    <div class="header__indexPage">
+      <div class="header__content">
+        <p>Vefforritun</p>
+        <h1>Fyrirlestrar</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page">
+      <div class="page__content">
+        <div class="page__top">
+          <div class="page__buttons">
+            <div id="buttons">
+              <button class="buttons__button">HTML</button>
+            </div>
+            <div id="buttons">
+              <button class="buttons__button">CSS</button>
+            </div>
+            <div id="buttons">
+              <button class="buttons__button">JavaScript</button>
+            </div>
+          </div>
+          <script>
+              // Bættir 'active class' á núverandi button
+              var header = document.getElementById("buttons");
+              var buttons = header.getElementsByClassName("buttons");
+              for (var i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener("click", function() {
+                  var current = document.getElementsByClassName("active");
+                  current[0].page__cards = current[0].page__cards.replace(" active", "");
+                  this.page__cards += " active";
+                });
+
+                /* Til þess að fela kort þarf að bætta við eftir page__cards */
+                /* Svo velja id / selector fyrir html, css etc */
+              }
+              </script>
+        </div>
+        <div class="page__cards">
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb1.jpg">
+            </div>
+            <div class="card__text">
+              <p>HTML</p>
+              <h2>Sagan</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__text">
+              <p>HTML</p>
+              <h2>Element</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb2.jpg">
+            </div>
+            <div class="card__text">
+              <p>HTML</p>
+              <h2>Aðgengi</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb3.jpg">
+            </div>
+            <div class="card__text">
+              <p>CSS</p>
+              <h2>Málfræði</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb4.jpg">
+            </div>
+            <div class="card__text">
+              <p>CSS</p>
+              <h2>Box model</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb5.jpg">
+            </div>
+            <div class="card__text">
+              <p>CSS</p>
+              <h2>Flexbox</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb6.jpg">
+            </div>
+            <div class="card__text">
+              <p>CSS</p>
+              <h2>Skalanleg vefhönnun</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__text">
+              <p>Javascript</p>
+              <h2>Gildi, týpur og virkjar</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb7.jpg">
+            </div>
+            <div class="card__text">
+              <p>Javascript</p>
+              <h2>Forrit</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb8.jpg">
+            </div>
+            <div class="card__text">
+              <p>Javascript</p>
+              <h2>Föll</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb9.jpg">
+            </div>
+            <div class="card__text">
+              <p>Javascript</p>
+              <h2>Array & objects</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__text">
+              <p>Javascript</p>
+              <h2>DOM & vafrinn</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__thumb">
+              <img src="img/thumb10.jpg">
+            </div>
+            <div class="card__text">
+              <p>Javascript</p>
+              <h2>Dæmi</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    
+  </footer>
+  
+>>>>>>> Stashed changes
 </body>
 </html>
