@@ -20,16 +20,31 @@
       <div class="page__content">
         <div class="page__top">
           <div class="page__buttons">
-            <div class="buttons">
+            <div id="buttons">
               <button class="buttons__button">HTML</button>
             </div>
-            <div class="buttons">
+            <div id="buttons">
               <button class="buttons__button">CSS</button>
             </div>
-            <div class="buttons">
+            <div id="buttons">
               <button class="buttons__button">JavaScript</button>
             </div>
           </div>
+          <script>
+              // Bættir 'active class' á núverandi button
+              var header = document.getElementById("buttons");
+              var buttons = header.getElementsByClassName("buttons");
+              for (var i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener("click", function() {
+                  var current = document.getElementsByClassName("active");
+                  current[0].page__cards = current[0].page__cards.replace(" active", "");
+                  this.page__cards += " active";
+                });
+
+                /* Til þess að fela kort þarf að bætta við eftir page__cards */
+                /* Svo velja id / selector fyrir html, css etc */
+              }
+              </script>
         </div>
         <div class="page__cards">
           <div class="card">
@@ -164,6 +179,4 @@
   <footer>
 
   </footer>
-
-</body>
-</html>
+  </html>
