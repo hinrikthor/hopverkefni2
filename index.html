@@ -5,9 +5,6 @@
   <title>Hópverkefni 2</title>
 </head>
 <body>
-<<<<<<< Updated upstream
-
-=======
   <header>
     <div class="header__indexPage">
       <div class="header__content">
@@ -21,34 +18,30 @@
       <div class="page__content">
         <div class="page__top">
           <div class="page__buttons">
-            <div id="buttons">
-              <button class="buttons__button">HTML</button>
+            <div class ="buttons">
+                <button onclick="active_hide('CSS');">HTML/button> 
             </div>
-            <div id="buttons">
+            <div class="buttons">
               <button class="buttons__button">CSS</button>
             </div>
-            <div id="buttons">
+            <div class="buttons">
               <button class="buttons__button">JavaScript</button>
             </div>
           </div>
-          <script>
-              // Bættir 'active class' á núverandi button
-              var header = document.getElementById("buttons");
-              var buttons = header.getElementsByClassName("buttons");
-              for (var i = 0; i < buttons.length; i++) {
-                buttons[i].addEventListener("click", function() {
-                  var current = document.getElementsByClassName("active");
-                  current[0].page__cards = current[0].page__cards.replace(" active", "");
-                  this.page__cards += " active";
-                });
-
-                /* Til þess að fela kort þarf að bætta við eftir page__cards */
-                /* Svo velja id / selector fyrir html, css etc */
-              }
-              </script>
+          <script type="text/javascript">
+            function active_hide(HTML) {
+        
+               var divelement = document.getElementById(HTML);
+        
+               if(divelement.style.display == 'none')
+                  divelement.style.display = 'HTML';
+               else
+                  divelement.style.display = 'none';
+            }
+        </script>
         </div>
         <div class="page__cards">
-          <div class="card">
+          <div class="card" id="HTML">
             <div class="card__thumb">
               <img src="img/thumb1.jpg">
             </div>
@@ -72,7 +65,7 @@
               <h2>Aðgengi</h2>
             </div>
           </div>
-          <div class="card">
+          <div class="card id="CSS">
             <div class="card__thumb">
               <img src="img/thumb3.jpg">
             </div>
@@ -165,6 +158,5 @@
     
   </footer>
   
->>>>>>> Stashed changes
 </body>
 </html>
