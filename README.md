@@ -1,3 +1,14 @@
+# To-Do
+index.js og javascript virkni.
+Sækja gögn úr lectures.json til að populatea síðuna.
+virkni fyrir takka til að fela viss kort osfrv. (stýlar komnir).
+
+# Búið
+Flestir stýlar komnir.
+Npm pakkar ættu að vera uppsettir.
+.gitignore komið.
+
+
 # Hópverkefni 2
 Verkefnið felst í því að smíða prótótýpu af fyrirlestravef fyrir vefforritun. Gefin eru gögn sem unnin eru uppúr námsefni vetrarins.
 
@@ -32,7 +43,7 @@ Hinrik Þór Veturliðason htv2@hi.is - Tölvunarfræðinemi
 
 Ástráður Stefánsson ass106@hi.is - Tölvunarfræðinemi
 
-Teitur Guðmundsson tg123@hi.is - Tölvunarfræðinemi
+Teitur Guðmundsson teg6@hi.is - Tölvunarfræðinemi
 
 # Hópverkefni 2
 

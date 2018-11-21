@@ -42,6 +42,11 @@
   margin: $gutter/2;
   width: 400px-($gutter);
   height: 325px-($gutter);
+
+  &.card-hidden {
+    visibility: hidden;
+    display: none;
+  }
   
   &__thumb {
     width: 100%;
