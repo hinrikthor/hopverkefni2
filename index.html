@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Mono:400,700" rel="stylesheet">
   <link rel="stylesheet" href="dist/styles.css">
-
   <title>Hópverkefni 2</title>
 </head>
 <body>
@@ -16,39 +15,27 @@
       </div>
     </div>
   </header>
+  <div class="list">
+
+  </div>
   <main>
     <div class="page">
       <div class="page__content">
         <div class="page__top">
           <div class="page__buttons">
-            <div id="buttons">
-              <button class="buttons__button">HTML</button>
+            <div id="buttons" class="buttons">
+              <button id="HTML" class="buttons__button">HTML</button>
             </div>
-            <div id="buttons">
+            <div id="buttons" class="buttons">
               <button class="buttons__button">CSS</button>
             </div>
-            <div id="buttons">
+            <div id="buttons" class="buttons">
               <button class="buttons__button">JavaScript</button>
             </div>
           </div>
-          <script>
-              // Bættir 'active class' á núverandi button
-              var header = document.getElementById("buttons");
-              var buttons = header.getElementsByClassName("buttons");
-              for (var i = 0; i < buttons.length; i++) {
-                buttons[i].addEventListener("click", function() {
-                  var current = document.getElementsByClassName("active");
-                  current[0].page__cards = current[0].page__cards.replace(" active", "");
-                  this.page__cards += " active";
-                });
-
-                /* Til þess að fela kort þarf að bætta við eftir page__cards */
-                /* Svo velja id / selector fyrir html, css etc */
-              }
-              </script>
         </div>
         <div class="page__cards">
-          <div id="HTML" class="card">
+          <div class="card">
             <div class="card__thumb">
               <img src="img/thumb1.jpg">
             </div>
@@ -59,7 +46,7 @@
             </div>
             </div>
           </div>
-          <div class="card card-hidden">
+          <div class="card">
             <div class="card__content">
               <div class="card__text">
                 <p>HTML</p>
@@ -74,9 +61,11 @@
             <div class="card__thumb">
               <img src="img/thumb2.jpg">
             </div>
+            <div class="card__content">
             <div class="card__text">
               <p>HTML</p>
               <h2>Aðgengi</h2>
+              </div>
             </div>
           </div>
           <div class="card">
@@ -180,10 +169,5 @@
   <footer>
 
   </footer>
-<<<<<<< HEAD
+  <script src="./dist/bundle.js"></script>
   </html>
-=======
-  <script src="scripts.js"></script>
-</body>
-</html>
->>>>>>> ass_branch
