@@ -43,3 +43,4 @@ export default class List {
       .then((data) => this.renderData(data));
   }
 }
+
