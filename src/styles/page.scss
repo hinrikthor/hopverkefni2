@@ -29,16 +29,15 @@
 
     &__cards {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      justify-content: flex-start;
     }
-}
-
+  }
+  
 .list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  justify-content: center;
 }
 
 .card {
@@ -82,19 +81,20 @@
     & a {
       text-decoration: none;
       color: $color-1;
+      
+      & h2 {
+        font-weight: bold;
+        font-size: 1.7rem;
+      }
     }
 
-    & h2 {
-      font-weight: bold;
-      font-size: 1.7rem;
-    }
   }
 }
 
 .buttons {
   display: flex;
   padding: 0 $gutter;
-
+  
   &__button {
     display: flex;
     justify-content: center;
@@ -102,8 +102,9 @@
     font-weight: bold;
     background-color: $color-4;
     border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    padding: 0.8rem 1.3rem;
+    font-size: 1.5rem;
 
     &.button-active {
       background-color: $color-5;

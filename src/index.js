@@ -11,5 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     const list = new List();
     list.load();
+
+    const buttons = document.querySelectorAll('button');
+    buttons.addEventListener('click', () => {
+      const newList = new List();
+      newList.load();
+    });
   }
 });

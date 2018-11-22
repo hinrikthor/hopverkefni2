@@ -5,6 +5,7 @@ header {
     background-image: url("../../img/header.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
+    height: 500px;
     
     & .header__indexPage {
         display: flex;
@@ -12,7 +13,6 @@ header {
         width: 100%;
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.4);
-        height: 40vh;
     }
 
     & .header__content {
