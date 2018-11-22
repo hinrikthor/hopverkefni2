@@ -24,8 +24,8 @@ export default class List {
   }
 
   renderItem(item){
-    const card = document.createElement('div');
-    card.className = 'card';
+    const card = createElement('div');
+    card.className = `card ${item.category}`;
 
     let imageElement = generateImage(item.thumbnail);
     card.appendChild(imageElement);
