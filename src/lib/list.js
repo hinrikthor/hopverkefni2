@@ -24,8 +24,8 @@ export default class List {
   }
 
   renderItem(item){
-    const card = createElement('div');
-    card.className = `card ${item.category}`;
+    const card = document.createElement('div');
+    card.className = 'card';
 
     let imageElement = generateImage(item.thumbnail);
     card.appendChild(imageElement);
@@ -43,3 +43,4 @@ export default class List {
       .then((data) => this.renderData(data));
   }
 }
+

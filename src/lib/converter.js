@@ -2,7 +2,7 @@ import { createElement } from './helpers';
 
 export function generateImage(imagePath) {
     if (!imagePath) {
-        return createElement('div');
+        return document.createElement('div');
     }
 
     const imageElement = createElement('img');
@@ -11,21 +11,23 @@ export function generateImage(imagePath) {
 }
 
 export function generateTitle(title, text, slug){
-    const container = createElement('div');
+    const container = document.createElement('div');
 
     const textContainer = createElement('div');
     textContainer.className = 'card__text';
 
-    const link = createElement('a');
+    const link = document.createElement('a');
     link.href = `/fyrirlestur.html?slug=${slug}`;
 
-    const textElement = createElement('p', text.toUpperCase());
+    const textElement = document.createElement('p');
+    textElement.appendChild(document.createTextNode(text.toUpperCase()));
 
-    const titleElement = createElement('h2', title);
+    const titleElement = document.createElement('h2');
+    titleElement.appendChild(document.createTextNode(title));
 
-    const check = createElement('div');
+    const check = document.createElement('div');
     check.className = 'card__finished';
-    check.appendChild(createElement('p'));
+    check.appendChild(document.createElement('p'));
     
     link.appendChild(textElement);
     link.appendChild(titleElement);
