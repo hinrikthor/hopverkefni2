@@ -24,11 +24,17 @@ export default class List {
   }
 
   renderItem(item){
-    const titleElement = generateTitle(item.title, item.slug);
-    this.container.appendChild(titleElement);
+    const card = document.createElement('div');
+    card.className = 'card';
 
     let imageElement = generateImage(item.thumbnail);
-    this.container.appendChild(imageElement);
+    card.appendChild(imageElement);
+
+    const titleElement = generateTitle(item.title, item.category, item.slug);
+    titleElement.className = ''
+    card.appendChild(titleElement);
+
+    this.container.appendChild(card);
   }
 
   load() {
