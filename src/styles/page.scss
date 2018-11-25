@@ -1,15 +1,15 @@
 @import "config";
 
 .page {
+  display: flex;
+  justify-content: center;
+  padding: 0 $gutter;
+  
+  &__content {
     display: flex;
     justify-content: center;
-    padding: 0 $gutter;
-  
-    &__content {
-      display: flex;
-      max-width: $max-width;
-      justify-content: center;
-      flex-direction: column;
+    flex-direction: column;
+    max-width: $max-width;
     }
 
     &__top {
@@ -17,37 +17,44 @@
       justify-content: center;
       margin-bottom: $gutter;
       margin-top: $gutter;
+      max-width: $max-width;
     }
 
     &__buttons {
       display: flex;
-      width: 25%;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-direction: row;
 
     }
 
     &__cards {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
+      max-width: $max-width;
     }
   }
   
-.list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-.card {
-  background-color: $color-4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: $gutter/2;
-  width: 400px-($gutter);
-  height: 325px-($gutter);
+    @media screen and (max-width: 1240px) {
+      width: $max-width/1.5;
+    }
+  }
+  
+  .card {
+    background-color: $color-4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: $gutter/2;
+    width: $max-width/3.158;
+
+    @media screen and (max-width: 700px) {
+      width: 750px;
+    }
 
   &.card-hidden {
     display: none;
@@ -55,7 +62,6 @@
   
   &__thumb {
     width: 100%;
-
   }
 
   &__content {
