@@ -31,17 +31,40 @@ export default class Lecture {
         this.renderItem(data);
     }
 
+    UrlExists(url) {
+        var http = new XMLHttpRequest();
+        http.open('HEAD', url, false);
+        http.send();
+        if (http.status != 404) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     renderItem(item) {
+        const page = document.querySelector('.page');
         const pageContainer = createElement('div');
-        pageContainer.className = 'page';
+        pageContainer.className = 'page__content';
         var counter = item.content.length;
-        this.container.appendChild(pageContainer);
+
+        var header = document.querySelector('.header');
+        var imgUrl = `../../${item.image}`;
+        if (imgUrl.status != 404)
+
+        if (this.UrlExists(imgUrl)) {
+        header.style.backgroundImage = `url('../../${item.image}')`;
+        }
+
 
         for (var i = 0; i<counter; i++) {
             var type = item.content[i];
             var content = contentCreator(type);
+            pageContainer.appendChild(content);
             console.log(content);
         }
+
+        page.appendChild(pageContainer);
 
     }
 

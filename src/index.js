@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {  
     const list = new List();
     list.load();
-
     const buttons = document.querySelectorAll('.buttons__button');
     for (let button of document.querySelectorAll('.buttons__button')) {
       button.addEventListener('click', readButton);
