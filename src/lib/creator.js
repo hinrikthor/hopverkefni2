@@ -47,12 +47,17 @@ function headingCreator(item) {
 function listCreator(item) {
     let div = createElement('div');
     div.className = 'content__list';
-    div.appendChild(createElement('li', item.data));
+    div.appendChild(createElement('ol', item.data));
+
+    return div;
 }
 
 function codeCreator(item) {
     let div = createElement('div');
     div.className = 'content__code';
+    div.appendChild(createElement('p', item.data));
+
+    return div;
 }
 
 export function contentCreator(item) {
