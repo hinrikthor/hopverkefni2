@@ -1,3 +1,4 @@
+
 import { empty, createElement } from './helpers';
 import { generateImage, generateTitle } from './converter';
 
@@ -24,8 +25,8 @@ export default class List {
   }
 
   renderItem(item){
-    const card = document.createElement('div');
-    card.className = 'card';
+    const card = createElement('div');
+    card.className = `card ${item.category}`;
 
     let imageElement = generateImage(item.thumbnail);
     card.appendChild(imageElement);
@@ -43,4 +44,3 @@ export default class List {
       .then((data) => this.renderData(data));
   }
 }
-

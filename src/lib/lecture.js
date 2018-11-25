@@ -22,6 +22,12 @@ export default class Lecture {
             });
     }
 
+    renderData(data) {
+        data.lectures.map((item) => {
+            this.renderItem(item);
+        });
+    }
+
     load(){
         const qs = new URLSearchParams(window.location.search);
         const slug = qs.get('slug');

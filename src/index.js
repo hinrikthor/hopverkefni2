@@ -1,5 +1,6 @@
 import List from './lib/list.js';
 import Lecture from './lib/lecture.js';
+import { readButton } from './lib/helpers';
 
 document.addEventListener('DOMContentLoaded', () => {
   const page = document.querySelector('body');
@@ -8,14 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (isLecturePage) {
     const lecture = new Lecture();
     lecture.load();
-  } else {
+  } else {  
     const list = new List();
     list.load();
 
-    const buttons = document.querySelectorAll('button');
-    buttons.addEventListener('click', () => {
-      const newList = new List();
-      newList.load();
-    });
+    const buttons = document.querySelectorAll('.buttons__button');
+    for (let button of document.querySelectorAll('.buttons__button')) {
+      button.addEventListener('click', readButton);
+    }
+    console.log(buttons.length);
+
   }
 });
