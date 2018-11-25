@@ -19,6 +19,7 @@ export default class List {
   }
 
   renderData(data) {
+    console.log(data);
     data.lectures.map((item) => {
       this.renderItem(item);
     });
