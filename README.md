@@ -1,7 +1,6 @@
 # To-Do
-index.js og javascript virkni.
-Sækja gögn úr lectures.json til að populatea síðuna.
-virkni fyrir takka til að fela viss kort osfrv. (stýlar komnir).
+Að geyma kláraða fyrirlestra.
+Stýla fyrirlestrarsíðu.
 
 # Búið
 Flestir stýlar komnir.
