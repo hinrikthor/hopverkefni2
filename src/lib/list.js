@@ -31,6 +31,12 @@ export default class List {
     let imageElement = generateImage(item.thumbnail);
     card.appendChild(imageElement);
 
+    let link = createElement('a');
+    let span = createElement('span');
+    link.setAttribute('href', `/fyrirlestur.html?slug=${item.slug}`);
+    link.appendChild(span);
+    card.appendChild(link);
+
     const titleElement = generateTitle(item.title, item.category, item.slug);
     titleElement.className = 'card__content'
     card.appendChild(titleElement);
