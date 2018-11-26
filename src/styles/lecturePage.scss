@@ -1,80 +1,26 @@
-@import "config";
-
-
-.page {
-    display: flex;
-    justify-content: center;
-    padding: 0 $gutter;
-
-
 .content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: $max-width;
-    
-    
+
     &__youtube {
-        display: flex;
-        justify-content: center;
-        margin-bottom: $gutter;
-        margin-top: $gutter;
-        max-width: $max-width;
+        
     }
-    
+
     &__text {
-        display: flex;
-        justify-content: center;
-        margin-bottom: $gutter;
-        margin-top: $gutter;
-        
+
     }
-    
+
     &__quote {
-        display: flex;
-        justify-content: center;
-        max-width: $max-width;
-        margin-bottom: $gutter;
-        margin-top: $gutter;
 
     }
-        
-        &__image {
-            display: flex;
-            justify-content: center;
-            margin-bottom: $gutter;
-            margin-top: $gutter;
-            max-width: $max-width;
-        }
-        
-        &__heading {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: $gutter;
-            margin-top: $gutter;
-            
-        }
-        
-        &__list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: left;
-            max-width: $max-width;
-            list-style-type: circle;
-            margin-bottom: $gutter;
-            margin-top: $gutter;
-        }
-            
-            &__code {
-                display: flex;
-                justify-content: center;
-                max-width: $max-width;
-                margin-bottom: $gutter;
-                margin-top: $gutter;
-                
-            
-            }
-        }
+
+    &__image {
 
     }
+
+    &__list {
+
+    }
+
+    &__code {
+
+    }
+}

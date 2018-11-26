@@ -2,12 +2,12 @@
 
 header {
     display: flex;
-    background-image: url("../../img/header.jpg");
+    background-image: url("../img/header.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 500px;
     
-    & .header__indexPage {
+    & .header__box {
         display: flex;
         padding: 0 $gutter;
         width: 100%;

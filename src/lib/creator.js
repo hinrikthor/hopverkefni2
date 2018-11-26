@@ -3,8 +3,10 @@ import { createElement } from './helpers.js';
 function youtubeCreator(item) {
     let div = createElement('div')
     div.className = 'content__youtube';
-    let link = createElement('a');
-    link.setAttribute('href', item.data);
+    let link = createElement('iframe');
+    link.setAttribute('src', item.data);
+    link.setAttribute('frameborder', 0);
+    link.setAttribute('allowfullscreen', 0);
 
     div.appendChild(link);
     return div;
@@ -13,7 +15,12 @@ function youtubeCreator(item) {
 function textCreator(item) {
     let div = createElement('div');
     div.className = 'content__text';
-    div.appendChild(createElement('p', item.data));
+    let strings = item.data.split('\n');
+
+    for (var i = 0; i<strings.length; i++) {
+        let text = createElement('p', strings[i]);
+        div.appendChild(text);
+    }
 
     return div;
 }
@@ -21,17 +28,28 @@ function textCreator(item) {
 function quoteCreator(item) {
     let div = createElement('div');
     div.className = 'content__quote';
-    div.appendChild(createElement('p', item.data));
+
+    let quote = createElement('p', item.data);
+    let citation = createElement('cite', item.attribute);
+
+    div.appendChild(quote);
+    div.appendChild(citation);
 
     return div;
 }
 
 function imageCreator(item) {
     let div = createElement('div');
+    let figure = createElement('figure');
     div.className = 'content__image';
     let image = createElement('img');
+    figure.appendChild(image);
     image.setAttribute('src', `../../${item.data}`);
-    div.appendChild(image);
+    image.setAttribute('alt', item.caption);
+    let caption = createElement('figcaption', item.caption);
+    figure.appendChild(caption);
+    div.appendChild(figure);
+
 
     return div;
 }
@@ -47,15 +65,22 @@ function headingCreator(item) {
 function listCreator(item) {
     let div = createElement('div');
     div.className = 'content__list';
-    div.appendChild(createElement('ol', item.data));
 
+    let ul = createElement('ul');
+
+    for (var i = 0; i<item.data.length; i++) {
+        ul.appendChild(createElement('li', item.data[i]))
+    }
+    div.appendChild(ul);
+    
     return div;
 }
 
 function codeCreator(item) {
     let div = createElement('div');
+    let p = createElement('xmp', `${item.data}`);
     div.className = 'content__code';
-    div.appendChild(createElement('p', item.data));
+    div.appendChild(p);
 
     return div;
 }
@@ -69,11 +94,11 @@ export function contentCreator(item) {
         var div = quoteCreator(item);
     } else if (item.type == 'image') {
         var div = imageCreator(item);
-    } else if (item.type = 'heading') {
+    } else if (item.type == 'heading') {
         var div = headingCreator(item);
-    } else if (item.type = 'list') {
+    } else if (item.type == 'list') {
         var div = listCreator(item);
-    } else if (item.type = 'code') {
+    } else if (item.type == 'code') {
         var div = codeCreator(item);
     }
     return div;
