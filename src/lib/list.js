@@ -1,3 +1,4 @@
+
 import { empty, createElement } from './helpers';
 import { generateImage, generateTitle } from './converter';
 
@@ -50,4 +51,3 @@ export default class List {
       .then((data) => this.renderData(data));
   }
 }
-

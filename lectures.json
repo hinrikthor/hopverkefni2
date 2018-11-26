@@ -3,7 +3,7 @@
     {
       "slug": "html-sagan",
       "title": "Sagan",
-      "category": "html",
+      "category": "HTML",
       "image": "img/code.jpg",
       "thumbnail": "img/thumb1.jpg",
       "content": [
@@ -71,7 +71,7 @@
     {
       "slug": "html-element",
       "title": "Element",
-      "category": "html",
+      "category": "HTML",
       "image": "img/code2.jpg",
       "content": [
         {
@@ -159,7 +159,7 @@
     {
       "slug": "html-a11y",
       "title": "Aðgengi",
-      "category": "html",
+      "category": "HTML",
       "image": "img/code2.jpg",
       "thumbnail": "img/thumb2.jpg",
       "content": [
@@ -209,7 +209,7 @@
     {
       "slug": "css-syntax",
       "title": "Málfræði",
-      "category": "css",
+      "category": "CSS",
       "image": "img/code2.jpg",
       "thumbnail": "img/thumb3.jpg",
       "content": [
@@ -276,7 +276,7 @@
     {
       "slug": "css-box",
       "title": "Box model",
-      "category": "css",
+      "category": "CSS",
       "image": "img/code2.jpg",
       "thumbnail": "img/thumb4.jpg",
       "content": [
@@ -302,7 +302,7 @@
     {
       "slug": "css-flexbox",
       "title": "Flexbox",
-      "category": "css",
+      "category": "CSS",
       "thumbnail": "img/thumb5.jpg",
       "content": [
         {
@@ -314,7 +314,7 @@
     {
       "slug": "css-responsive",
       "title": "Skalanleg vefhönnun",
-      "category": "css",
+      "category": "CSS",
       "thumbnail": "img/thumb6.jpg",
       "content": [
         {
@@ -388,7 +388,7 @@
       "slug": "js-basic",
       "title": "Gildi, týpur og virkjar",
       "image": "img/code2.jpg",
-      "category": "javascript",
+      "category": "JAVASCRIPT",
       "content": [
         {
           "type": "quote",
@@ -435,7 +435,7 @@
     {
       "slug": "js-programs",
       "title": "Forrit",
-      "category": "javascript",
+      "category": "JAVASCRIPT",
       "thumbnail": "img/thumb7.jpg",
       "content": [
         {
@@ -447,7 +447,7 @@
     {
       "slug": "js-functions",
       "title": "Föll",
-      "category": "javascript",
+      "category": "JAVASCRIPT",
       "image": "img/code.jpg",
       "thumbnail": "img/thumb8.jpg",
       "content": [
@@ -464,7 +464,7 @@
     {
       "slug": "js-array",
       "title": "Array & objects",
-      "category": "javascript",
+      "category": "JAVASCRIPT",
       "image": "img/code.jpg",
       "thumbnail": "img/thumb9.jpg",
       "content": [
@@ -511,7 +511,7 @@
     {
       "slug": "js-dom",
       "title": "DOM & vafrinn",
-      "category": "javascript",
+      "category": "JAVASCRIPT",
       "content": [
         {
           "type": "youtube",
@@ -538,7 +538,7 @@
     {
       "slug": "js-example",
       "title": "Dæmi",
-      "category": "javascript",
+      "category": "JAVASCRIPT",
       "image": "img/code2.jpg",
       "thumbnail": "img/thumb10.jpg",
       "content": [
