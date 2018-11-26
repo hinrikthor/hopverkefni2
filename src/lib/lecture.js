@@ -53,7 +53,7 @@ export default class Lecture {
         }
 
         page.appendChild(pageContainer);
-
+        
     }
 
     load(){

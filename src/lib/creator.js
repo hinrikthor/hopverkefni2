@@ -5,6 +5,8 @@ function youtubeCreator(item) {
     div.className = 'content__youtube';
     let link = createElement('iframe');
     link.setAttribute('src', item.data);
+    link.setAttribute('frameborder', 0);
+    link.setAttribute('allowfullscreen', 0);
 
     div.appendChild(link);
     return div;
