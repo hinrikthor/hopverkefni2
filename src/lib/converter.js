@@ -7,7 +7,7 @@ export function generateImage(imagePath) {
 
   const imageElement = createElement('img');
   imageElement.className = 'card__thumb';
-  imageElement.src = `../../${imagePath}`;
+  imageElement.src = `./${imagePath}`;
   return imageElement;
 }
 
@@ -18,7 +18,7 @@ export function generateTitle(title, text, slug) {
   textContainer.className = 'card__text';
 
   const link = document.createElement('a');
-  link.href = `/fyrirlestur.html?slug=${slug}`;
+  link.href = `./fyrirlestur.html?slug=${slug}`;
 
   const textElement = document.createElement('p');
   textElement.appendChild(document.createTextNode(text.toUpperCase()));

@@ -44,7 +44,7 @@ function imageCreator(item) {
   div.className = 'content__image';
   const image = createElement('img');
   figure.appendChild(image);
-  image.setAttribute('src', `../../${item.data}`);
+  image.setAttribute('src', `./${item.data}`);
   image.setAttribute('alt', item.caption);
   const caption = createElement('figcaption', item.caption);
   figure.appendChild(caption);

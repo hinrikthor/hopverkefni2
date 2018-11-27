@@ -4,7 +4,7 @@ import { contentCreator } from './creator';
 export default class Lecture {
   constructor() {
     this.container = document.querySelector('.lecture-page');
-    this.url = '../lectures.json';
+    this.url = './lectures.json';
   }
 
 
@@ -43,7 +43,7 @@ export default class Lecture {
 
     const header = document.querySelector('.header');
     if (item.image != undefined) {
-      header.style.backgroundImage = `url('../../${item.image}')`;
+      header.style.backgroundImage = `url('./${item.image}')`;
     }
 
     const headerContent = document.querySelector('.header__content');

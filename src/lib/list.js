@@ -4,7 +4,7 @@ import { generateImage, generateTitle } from './converter';
 export default class List {
   constructor() {
     this.container = document.querySelector('.list');
-    this.url = '../lectures.json';
+    this.url = './lectures.json';
   }
 
   loadLectures() {
@@ -33,7 +33,7 @@ export default class List {
 
     const link = createElement('a');
     const span = createElement('span');
-    link.setAttribute('href', `/fyrirlestur.html?slug=${item.slug}`);
+    link.setAttribute('href', `./fyrirlestur.html?slug=${item.slug}`);
     link.appendChild(span);
     card.appendChild(link);
 
