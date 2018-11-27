@@ -1,4 +1,4 @@
-import { empty, createElement } from './helpers';
+import { createElement } from './helpers';
 import { contentCreator } from './creator';
 
 export default class Lecture {
@@ -26,23 +26,22 @@ export default class Lecture {
   }
 
   renderData(data) {
-    console.log(data);
     this.renderItem(data);
   }
-  
+
   renderItem(item) {
     const page = document.querySelector('.page');
     const pageContainer = createElement('div');
     pageContainer.className = 'page__content';
     const counter = item.content.length;
-    
-    var store = window.localStorage.getItem(item.slug);
-    
+
+    const store = window.localStorage.getItem(item.slug);
+
     const button = document.querySelector('.footer__button');
     const finButton = document.querySelector('.button__finished');
 
     const header = document.querySelector('.header');
-    if (item.image != undefined) {
+    if (item.image !== undefined) {
       header.style.backgroundImage = `url('../../${item.image}')`;
     }
 
@@ -50,7 +49,7 @@ export default class Lecture {
     headerContent.appendChild(createElement('p', item.category));
     headerContent.appendChild(createElement('h2', item.title));
 
-    for (let i = 0; i < counter; i++) {
+    for (let i = 0; i < counter; i += 1) {
       const type = item.content[i];
       const content = contentCreator(type);
       pageContainer.appendChild(content);
@@ -59,7 +58,7 @@ export default class Lecture {
     page.appendChild(pageContainer);
 
 
-    if (store == 'finished') {
+    if (store === 'finished') {
       finButton.classList.remove('hidden');
     } else {
       button.classList.remove('hidden');
@@ -67,13 +66,11 @@ export default class Lecture {
 
     button.addEventListener('click', () => {
       window.localStorage.setItem(item.slug, 'finished');
-      console.log('saved');
       button.classList.add('hidden');
       finButton.classList.remove('hidden');
     });
     finButton.addEventListener('click', () => {
       window.localStorage.removeItem(item.slug);
-      console.log(item);
       button.classList.remove('hidden');
       finButton.classList.add('hidden');
     });

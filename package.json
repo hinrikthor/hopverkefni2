@@ -12,7 +12,8 @@
     "sass": "node-sass --source-map-embed ./src/styles/styles.scss ./dist/styles.css",
     "sass-watch": "node-sass --source-map-embed --watch --recursive src/styles/styles.scss ./dist/styles.css",
     "test": "npm-run-all eslint stylelint",
-    "fixer": "eslint --fix ./src/index.js ./src/lib/converter.js ./src/lib/creator.js ./src/lib/helpers.js ./src/lib/lecture.js ./src/lib/list.js ./src/lib/storage.js",
+    "stfixer": "stylelint --fix ./src/styles/config.scss ./src/styles/footer.scss ./src/styles/header.scss ./src/styles/lecturePage.scss ./src/styles/page.scss ./src/styles/styles.scss",
+    "esfixer": "eslint --fix ./src/index.js ./src/lib/converter.js ./src/lib/creator.js ./src/lib/helpers.js ./src/lib/lecture.js ./src/lib/list.js",
     "dev": "npm-run-all --parallel rollup-watch sass sass-watch browser-sync"
   },
   "keywords": [],

@@ -50,7 +50,7 @@ export function readButton(button) {
   // raise the counter and if it reaches zero activate all cards.
   if (bTarget.classList.contains('button-active')) {
     bTarget.className = 'buttons__button';
-    buttonCounter--;
+    buttonCounter -= 1;
     if (buttonCounter === 0) {
       showCards('html');
       showCards('css');
@@ -58,7 +58,7 @@ export function readButton(button) {
     }
   } else {
     bTarget.classList.add('button-active');
-    buttonCounter++;
+    buttonCounter += 1;
   }
 
   // Check the buttons that are active and, for each inner value, hide
