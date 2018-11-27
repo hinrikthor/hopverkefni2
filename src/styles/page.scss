@@ -39,12 +39,21 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     
-    /*@media screen and (max-width: 1000px) {
-      width: $gutter*20;
-    }*/
-  }
+    @media screen and (max-width: 1500px) {
+      width: 80vw;
+
+    }
+
+      @media screen and (min-width: 1200px) {
+        width: 97.6vw;
+      }
+
+      @media screen and (max-width: 500px) {
+        width: 80vw;
+      }
+    }
+  
   
   .card {
     background-color: $color-4;
@@ -54,6 +63,7 @@
     width: $max-width/3.1;
     position: relative;
     margin: $gutter 0;
+
 
     &:hover {
       transition: $trans;
