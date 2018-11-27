@@ -1,46 +1,47 @@
 @import "config";
 
 .footer {
+
+  display: flex;
+  padding: 0 $gutter;
+  justify-content: center;
+  margin: $gutter*2 0;
+
+  &__content {
     display: flex;
-    padding: 0 $gutter;
+    flex-direction: column;
     justify-content: center;
-    margin: $gutter*2 0;
+  }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  &__button {
+    margin: $gutter 0;
+    font-family: $font-head;
+    font-size: 1rem;
+    background: none;
+    border: 0;
+  }
 
-    &__button {
-        background: none;
-        border: none;
-        font-family: $font-head;
-        font-size: 1rem;
-        margin: $gutter 0;
-    }
-
-    &__link {
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-        font-family: $font-head;
-        font-size: 1rem;
-        margin: $gutter 0;
-    }
+  &__link {
+    display: flex;
+    justify-content: center;
+    margin: $gutter 0;
+    font-family: $font-head;
+    font-size: 1rem;
+    text-decoration: none;
+  }
 }
 
 .button {
-    &__finished {
-        background: none;
-        border: none;
-        font-family: $font-head;
-        font-size: 1rem;
-        color: $color-5;
-        margin: $gutter 0;
-    }
+  &__finished {
+    margin: $gutter 0;
+    font-family: $font-head;
+    font-size: 1rem;
+    color: $color-5;
+    background: none;
+    border: 0;
+  }
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
