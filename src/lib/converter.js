@@ -2,6 +2,7 @@ import { createElement } from './helpers';
 import { loadSavedLectures } from './storage';
 
 export function generateImage(imagePath) {
+<<<<<<< Updated upstream
     if (!imagePath) {
         return document.createElement('div');
     }
@@ -10,6 +11,16 @@ export function generateImage(imagePath) {
     imageElement.className = 'card__thumb';
     imageElement.src = `../../${imagePath}`;
     return imageElement;
+=======
+  if (!imagePath) {
+    return document.createElement('div');
+  }
+
+  const imageElement = createElement('img');
+  imageElement.className = 'card__thumb';
+  imageElement.src = `../${imagePath}`;
+  return imageElement;
+>>>>>>> Stashed changes
 }
 
 export function generateTitle(title, text, slug){

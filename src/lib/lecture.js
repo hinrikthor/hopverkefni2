@@ -26,9 +26,15 @@ export default class Lecture {
             });
     }
 
+<<<<<<< Updated upstream
     renderData(data) {
         console.log(data);
         this.renderItem(data);
+=======
+    const header = document.querySelector('.header');
+    if (item.image != undefined) {
+      header.style.backgroundImage = `url('../${item.image}')`;
+>>>>>>> Stashed changes
     }
 
     renderItem(item) {
