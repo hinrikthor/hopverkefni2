@@ -1,6 +1,5 @@
 # To-Do
-Að geyma kláraða fyrirlestra.
-Stýla fyrirlestrarsíðu.
+Eina sem er eftir er að Linta verkefni svo skilar Teit boi. 💯
 
 # Búið
 Flestir stýlar komnir.
