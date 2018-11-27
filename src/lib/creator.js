@@ -1,4 +1,4 @@
-import { createElement } from './helpers';
+import { createElement } from './helpers.js';
 
 function youtubeCreator(item) {
   const div = createElement('div');
@@ -17,7 +17,7 @@ function textCreator(item) {
   div.className = 'content__text';
   const strings = item.data.split('\n');
 
-  for (let i = 0; i < strings.length; i += 1) {
+  for (let i = 0; i < strings.length; i++) {
     const text = createElement('p', strings[i]);
     div.appendChild(text);
   }
@@ -68,7 +68,7 @@ function listCreator(item) {
 
   const ul = createElement('ul');
 
-  for (let i = 0; i < item.data.length; i += 1) {
+  for (let i = 0; i < item.data.length; i++) {
     ul.appendChild(createElement('li', item.data[i]));
   }
   div.appendChild(ul);
@@ -86,26 +86,20 @@ function codeCreator(item) {
 }
 
 export function contentCreator(item) {
-  if (item.type === 'youtube') {
-    const div = youtubeCreator(item);
-    return div;
-  } if (item.type === 'text') {
-    const div = textCreator(item);
-    return div;
-  } if (item.type === 'quote') {
-    const div = quoteCreator(item);
-    return div;
-  } if (item.type === 'image') {
-    const div = imageCreator(item);
-    return div;
-  } if (item.type === 'heading') {
-    const div = headingCreator(item);
-    return div;
-  } if (item.type === 'list') {
-    const div = listCreator(item);
-    return div;
-  } if (item.type === 'code') {
-    const div = codeCreator(item);
-    return div;
+  if (item.type == 'youtube') {
+    var div = youtubeCreator(item);
+  } else if (item.type == 'text') {
+    var div = textCreator(item);
+  } else if (item.type == 'quote') {
+    var div = quoteCreator(item);
+  } else if (item.type == 'image') {
+    var div = imageCreator(item);
+  } else if (item.type == 'heading') {
+    var div = headingCreator(item);
+  } else if (item.type == 'list') {
+    var div = listCreator(item);
+  } else if (item.type == 'code') {
+    var div = codeCreator(item);
   }
+  return div;
 }
