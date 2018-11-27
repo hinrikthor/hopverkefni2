@@ -1,61 +1,59 @@
 import { createElement } from './helpers';
-import { loadSavedLectures } from './storage';
 
 export function generateImage(imagePath) {
-<<<<<<< Updated upstream
-    if (!imagePath) {
-        return document.createElement('div');
-    }
-
-    var imageElement = createElement('img');
-    imageElement.className = 'card__thumb';
-    imageElement.src = `../../${imagePath}`;
-    return imageElement;
-=======
   if (!imagePath) {
     return document.createElement('div');
   }
 
   const imageElement = createElement('img');
   imageElement.className = 'card__thumb';
-  imageElement.src = `../${imagePath}`;
+  imageElement.src = `./${imagePath}`;
   return imageElement;
->>>>>>> Stashed changes
 }
 
-export function generateTitle(title, text, slug){
-    var container = document.createElement('div');
+export function generateTitle(title, text, slug) {
+  const container = document.createElement('div');
 
-    var textContainer = createElement('div');
-    textContainer.className = 'card__text';
+  const textContainer = createElement('div');
+  textContainer.className = 'card__text';
 
-    var link = document.createElement('a');
-    link.href = `/fyrirlestur.html?slug=${slug}`;
+  const link = document.createElement('a');
+  link.href = `./fyrirlestur.html?slug=${slug}`;
 
-    var textElement = document.createElement('p');
-    textElement.appendChild(document.createTextNode(text.toUpperCase()));
+  const textElement = document.createElement('p');
+  textElement.appendChild(document.createTextNode(text.toUpperCase()));
 
-    var titleElement = document.createElement('h2');
-    titleElement.appendChild(document.createTextNode(title));
+  const titleElement = document.createElement('h2');
+  titleElement.appendChild(document.createTextNode(title));
 
-    var check = document.createElement('div');
-    check.className = 'card__finished';
-    var checkP = createElement('p');
-    check.appendChild(checkP);
-    
-    textContainer.appendChild(textElement);
-    textContainer.appendChild(titleElement);
-    textContainer.appendChild(link);
-    container.appendChild(textContainer);
-    container.appendChild(check);
+  const check = document.createElement('div');
+  check.className = 'card__finished';
+  const checkP = createElement('p');
+  var store = window.localStorage.getItem(slug);
+  var mark = document.createTextNode('\u2714');
+  if (store != null) {
+    checkP.appendChild(mark);
+  }
+  check.appendChild(checkP);
 
-    return container;
+  textContainer.appendChild(textElement);
+  textContainer.appendChild(titleElement);
+  textContainer.appendChild(link);
+  container.appendChild(textContainer);
+  container.appendChild(check);
+
+
+  /* if ( == 'finished') {
+    checkP.appendChild(mark);
+  } */
+
+  return container;
 }
 
-export function generateQuote(){
-    //
+export function generateQuote() {
+  //
 }
 
-export function generateText(){
-    //
+export function generateText() {
+  //
 }

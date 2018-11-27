@@ -1,5 +1,6 @@
-.content {
+@import "config";
 
+<<<<<<< HEAD
     &__youtube {
 <<<<<<< Updated upstream
         
@@ -31,6 +32,85 @@
 >>>>>>> Stashed changes
 
         }
+=======
+.page {
+  display: flex;
+  align-items: center;
+  padding: 0 $gutter;
+
+  &__content {
+    display: flex;
+    max-width: $max-width;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .content {
+    display: flex;
+
+    &__youtube iframe {
+      display: flex;
+      padding-top: $gutter;
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+
+      @media (min-width: 500px) {
+        width: 63vw;
+        height: 19vh;
+      }
+      @media (min-width: 1200px) {
+        width: 55vw;
+        height: 55vh;
+      }
+      @media (min-width: 1500px) {
+        width: 53vw;
+        height: 48vh;
+      }
+    }
+
+    &__text p {
+      display: flex;
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+      line-height: 2;
+      flex-direction: column;
+
+      @media (min-width: 500px) {
+        width: 63vw;
+      }
+
+      @media (min-width: 1200px) {
+        width: 55vw;
+
+      }
+
+      @media (min-width: 1500px) {
+        width: 53vw;
+      }
+    }
+
+    &__quote {
+      padding-top: $gutter;
+      padding-bottom: $gutter;
+      padding-left: $gutter;
+      margin-bottom: $gutter;
+      background-color: $color-3;
+
+      & p {
+        margin-bottom: $gutter;
+
+        @media (min-width: 500px) {
+          width: 65.3vw;
+        }
+        @media (min-width: 1200px) {
+          width: 55vw;
+        }
+        @media (min-width: 1500px) {
+          width: 54.2vw;
+        }
+      }
+>>>>>>> master
     }
 
 <<<<<<< Updated upstream
@@ -55,6 +135,7 @@
 >>>>>>> Stashed changes
 
     &__image {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
     display: flex;
@@ -63,9 +144,25 @@
     margin-bottom: $gutter;
     max-width: 66%;
 >>>>>>> Stashed changes
+=======
+      margin-top: $gutter;
+      margin-bottom: $gutter;
 
+      @media (min-width: 500px) {
+        width: 63vw;
+      }
+>>>>>>> master
+
+      @media (min-width: 1200px) {
+        width: 55vw;
+      }
+
+      @media (min-width: 1500px) {
+        width: 53vw;
+      }
     }
 
+<<<<<<< HEAD
     &__list {
 <<<<<<< Updated upstream
 =======
@@ -87,6 +184,59 @@
     margin-bottom:$gutter;
     max-width:$max-width;
 >>>>>>> Stashed changes
+=======
+    &__list li {
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+      list-style: circle solid black;
 
+      @media (min-width: 500px) {
+        width: 63vw;
+      }
+
+      @media (min-width: 1200px) {
+        width: 55vw;
+      }
+
+      @media (min-width: 1500px) {
+        width: 53vw;
+      }
     }
+
+    &__code {
+      max-width: $max-width;
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+      justify-content: center;
+
+      @media (min-width: 500px) {
+        width: 63vw;
+      }
+
+      @media (min-width: 1200px) {
+        width: 55vw;
+      }
+
+      @media (min-width: 1500px) {
+        width: 53vw;
+      }
+    }
+
+    &__heading {
+      margin-top: $gutter;
+
+      @media (min-width: 500px) {
+        width: 63vw;
+      }
+
+      @media (min-width: 1200px) {
+        width: 55vw;
+      }
+>>>>>>> master
+
+      @media (min-width: 1500px) {
+        width: 53vw;
+      }
+    }
+  }
 }

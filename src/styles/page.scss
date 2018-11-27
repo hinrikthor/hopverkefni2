@@ -1,144 +1,145 @@
 @import "config";
 
+span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
 .page {
   display: flex;
   justify-content: center;
   padding: 0 $gutter;
-  
+
   &__content {
     display: flex;
+    max-width: $max-width;
     justify-content: center;
     flex-direction: column;
+  }
+
+  &__top {
+    display: flex;
     max-width: $max-width;
-    }
-
-    &__top {
-      display: flex;
-      justify-content: center;
-      margin-bottom: $gutter;
-      margin-top: $gutter;
-      max-width: $max-width;
-    }
-
-    &__buttons {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-
-    }
-
-    &__cards {
-      display: flex;
-      justify-content: center;
-      max-width: $max-width;
-    }
+    justify-content: center;
+    margin-top: $gutter;
+    margin-bottom: $gutter;
   }
-  
-  .list {
+
+  &__buttons {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    
-    /*@media screen and (max-width: 1000px) {
-      width: $gutter*20;
-    }*/
   }
-  
-  .card {
-    background-color: $color-4;
+
+  &__cards {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: $max-width/3.1;
-    position: relative;
-    margin: $gutter 0;
+    justify-content: center;
+    max-width: $max-width;
+  }
+}
 
-    &:hover {
-      transition: $trans;
-      background-color: darken($color-4, 20);
-    }
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    @media screen and (max-width: 700px) {
-      width: 750px;
-    }
+  @media screen and (max-width: 1500px) {
+    width: 80vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 97.6vw;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 80vw;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: $max-width/3.1;
+  margin: $gutter 0;
+  flex-direction: column;
+  background-color: $color-4;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: darken($color-4, 20);
+    transition: $trans;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 750px;
+  }
 
   &.card-hidden {
     display: none;
   }
 
-  & a {
-
-    & span {
-      position:absolute; 
-      width:100%;
-      height:100%;
-      top:0;
-      left: 0;
-      z-index: 1;
-    }
-  }
-  
   &__thumb {
     width: 100%;
   }
 
   &__content {
     display: flex;
+    padding: $gutter/2;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: $gutter/2;
   }
 
   &__finished {
     font-family: $font-head;
+    font-size: 2.65rem;
     color: $color-5;
-    font-size: 2.5rem;
   }
 
   &__text {
-    font-family: $font-head;
     display: flex;
+    font-family: $font-head;
     flex-direction: column;
-      
-    & h2 {
-      font-weight: bold;
-      font-size: 1.7rem;
-    }
-
   }
 }
 
 .buttons {
   display: flex;
   padding: 0 $gutter;
-  
-  
+
   &__button {
     display: flex;
     justify-content: center;
+    padding: 0.8rem 1.3rem;
     font-family: $font-head;
+    font-size: 1.5rem;
     font-weight: bold;
     background-color: $color-4;
-    border: none;
+    border: 0;
     border-radius: 1rem;
-    padding: 0.8rem 1.3rem;
-    font-size: 1.5rem;
+
     &:hover {
-      transition: $trans;
       background-color: darken($color-4, 20);
+      transition: $trans;
     }
 
-    
     &.button-active {
       background-color: $color-5;
+
       &:hover {
-        transition: $trans;
         background-color: darken($color-5, 20);
+        transition: $trans;
       }
     }
   }
-
 }

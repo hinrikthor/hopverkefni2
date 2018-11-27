@@ -12,7 +12,11 @@
     "sass": "node-sass --source-map-embed ./src/styles/styles.scss ./dist/styles.css",
     "sass-watch": "node-sass --source-map-embed --watch --recursive src/styles/styles.scss ./dist/styles.css",
     "test": "npm-run-all eslint stylelint",
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+    "fixer": "eslint --fix ./src/index.js ./src/lib/converter.js ./src/lib/creator.js ./src/lib/helpers.js ./src/lib/lecture.js ./src/lib/list.js ./src/lib/storage.js",
+>>>>>>> master
     "dev": "npm-run-all --parallel rollup-watch sass sass-watch browser-sync"
 =======
     "fixer": "eslint --fix ./src/index.js ./src/lib/converter.js ./src/lib/creator.js ./src/lib/helpers.js ./src/lib/lecture.js ./src/lib/list.js ./src/lib/storage.js",
