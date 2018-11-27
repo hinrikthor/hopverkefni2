@@ -48,7 +48,7 @@ export default class Lecture {
 
     const headerContent = document.querySelector('.header__content');
     headerContent.appendChild(createElement('p', item.category));
-    headerContent.appendChild(createElement('h2', item.title));
+    headerContent.appendChild(createElement('h1', item.title));
 
     for (let i = 0; i < counter; i++) {
       const type = item.content[i];
