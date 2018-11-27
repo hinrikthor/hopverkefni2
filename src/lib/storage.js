@@ -1,11 +1,11 @@
-export function  loadSavedLectures(){
-    if (getItem(slug) == 'stored') {
-        return true;
-    } else {
-        return false;
-    }
+export function saveLectures(item) {
+  const slug = item.slug;
+  window.localStorage.setItem(slug, 'finished');
+  console.log('saved');
+  console.log(slug);
 }
 
-export function saveLectures(slug){
-    setItem(slug, 'stored');
+export function restoreLecture(item) {
+  const slug = item.slug;
+  window.localStorage.removeItem(slug);
 }

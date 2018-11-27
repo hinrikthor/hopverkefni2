@@ -15,9 +15,9 @@ export function createElement(el, text) {
 
 // Function to activate cards and show them.
 export function showCards(value) {
-  let newValue = value.toLowerCase();
-  
-  for (let card of document.querySelectorAll('.card')) {
+  const newValue = value.toLowerCase();
+
+  for (const card of document.querySelectorAll('.card')) {
     if (card.classList.contains(newValue)) {
       card.className = `card ${newValue}`;
     }
@@ -26,26 +26,25 @@ export function showCards(value) {
 
 // Function to hide the cards.
 export function hideCards(value) {
-  let newValue = value.toLowerCase();
-  
-  for (let card of document.querySelectorAll('.card')) {
+  const newValue = value.toLowerCase();
+
+  for (const card of document.querySelectorAll('.card')) {
     if (!card.classList.contains(newValue)) {
       card.classList.add('card-hidden');
     } else if (card.classList.contains('card-hidden')) {
       card.className = `card ${newValue}`;
     }
   }
-  
 }
 
 // Variable to count how many buttons are active.
-var buttonCounter = 0;
+let buttonCounter = 0;
 
 // Function to read if buttons are active or not.
-// It also runs the functions to hide and show cards 
+// It also runs the functions to hide and show cards
 // depending on how many buttons are active.
 export function readButton(button) {
-  var bTarget = button.target;
+  const bTarget = button.target;
 
   // If the button is pressed and already active change it to inactive.
   // raise the counter and if it reaches zero activate all cards.
@@ -64,12 +63,11 @@ export function readButton(button) {
 
   // Check the buttons that are active and, for each inner value, hide
   // specific cards.
-  for (let buttons of document.querySelectorAll('.button-active')) {
+  for (const buttons of document.querySelectorAll('.button-active')) {
     hideCards(`${buttons.innerHTML}`);
   }
 
-  for (let buttons of document.querySelectorAll('.button-active')) {
+  for (const buttons of document.querySelectorAll('.button-active')) {
     showCards(`${buttons.innerHTML}`);
   }
-  
 }

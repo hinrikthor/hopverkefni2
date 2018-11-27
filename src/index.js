@@ -9,14 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (isLecturePage) {
     const lecture = new Lecture();
     lecture.load();
-  } else {  
+  } else {
     const list = new List();
     list.load();
     const buttons = document.querySelectorAll('.buttons__button');
-    for (let button of document.querySelectorAll('.buttons__button')) {
+    for (const button of document.querySelectorAll('.buttons__button')) {
       button.addEventListener('click', readButton);
     }
     console.log(buttons.length);
-
   }
 });
