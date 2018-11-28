@@ -1,38 +1,5 @@
 @import "config";
 
-<<<<<<< HEAD
-    &__youtube {
-<<<<<<< Updated upstream
-        
-    }
-
-    &__text {
-=======
-    display: flex;
-    flex-direction:center;
-    justify-content:center;
-        
-        & iframe {
-        margin-top:$gutter;
-        margin-bottom:$gutter;
-        margin-left:$gutter;
-        margin-right:$gutter;
-
-        }
-    }
-
-    &__text {
-    display: flex;
-    flex-direction: column;
-    margin-top:$gutter;
-    margin-bottom:$gutter;
-    max-width:$max-width;
-        
-        & p {
->>>>>>> Stashed changes
-
-        }
-=======
 .page {
   display: flex;
   align-items: center;
@@ -110,48 +77,15 @@
           width: 54.2vw;
         }
       }
->>>>>>> master
     }
-
-<<<<<<< Updated upstream
-    &__quote {
-=======
-    
-    &__quote  {
-    padding-top:$gutter;
-    padding-left: $gutter;
-    padding-bottom:$gutter;
-    max-width:$max-width;
-    background-color:$color-3;
-    
-        & p {
-        margin-bottom:$gutter;
-        justify-content:center;
-        max-width:$max-width;
-        }
-    }
-    
-    
->>>>>>> Stashed changes
 
     &__image {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-    display: flex;
-    justify-content: center;
-    margin-top: $gutter;
-    margin-bottom: $gutter;
-    max-width: 66%;
->>>>>>> Stashed changes
-=======
       margin-top: $gutter;
       margin-bottom: $gutter;
 
       @media (min-width: 500px) {
         width: 63vw;
       }
->>>>>>> master
 
       @media (min-width: 1200px) {
         width: 55vw;
@@ -162,29 +96,6 @@
       }
     }
 
-<<<<<<< HEAD
-    &__list {
-<<<<<<< Updated upstream
-=======
-    display: flex;
-    max-width:$max-width;
-    margin-top:$gutter;
-    margin-bottom:$gutter;
->>>>>>> Stashed changes
-
-        & li {
-
-        }
-    }
-
-    &__code {
-<<<<<<< Updated upstream
-=======
-    margin-top:$gutter;
-    margin-bottom:$gutter;
-    max-width:$max-width;
->>>>>>> Stashed changes
-=======
     &__list li {
       margin-top: $gutter;
       margin-bottom: $gutter;
@@ -232,7 +143,6 @@
       @media (min-width: 1200px) {
         width: 55vw;
       }
->>>>>>> master
 
       @media (min-width: 1500px) {
         width: 53vw;

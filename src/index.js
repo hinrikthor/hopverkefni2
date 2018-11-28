@@ -16,13 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     for (const button of document.querySelectorAll('.buttons__button')) {
       button.addEventListener('click', readButton);
     }
-<<<<<<< Updated upstream
     console.log(buttons.length);
-<<<<<<< HEAD
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> master
   }
 });
