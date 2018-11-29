@@ -1,12 +1,3 @@
-# To-Do
-Eina sem er eftir er að Linta verkefni svo skilar Teit boi. 💯
-
-# Búið
-Flestir stýlar komnir.
-Npm pakkar ættu að vera uppsettir.
-.gitignore komið.
-
-
 # Hópverkefni 2
 Verkefnið felst í því að smíða prótótýpu af fyrirlestravef fyrir vefforritun. Gefin eru gögn sem unnin eru uppúr námsefni vetrarins.
 
@@ -28,7 +19,7 @@ Forsíða verkefnisins er í skjalinu index.html. Allar aðrar síður eru fyrir
 
 Allar síðurnar vísa í sama stylesheet, styles.css, sem þýtt hefur verið úr styles.scss með node-sass.
 
-Sérhverlar HTML síða á sína eigin sass skrá, þær eru geymdar í möppunni scss ásamt sér skrám fyrir header, footer og config. styles.scss vísar svo í allar þessar skrár. Þetta gerir skipulag kóðans auðveldara.
+Sérhver HTML síða á sína eigin sass skrá, þær eru geymdar í möppunni scss ásamt sér skrám fyrir header, footer og config. styles.scss vísar svo í allar þessar skrár. Þetta gerir skipulag kóðans auðveldara.
 
 Fyrirlestur vísar í skrá lecture-page þar sem fyrirlestrar eru eins uppsettir á öllum síðum, styles.scss er notað fyrir sama lay-out yfir alla fyrirlestra.
 
